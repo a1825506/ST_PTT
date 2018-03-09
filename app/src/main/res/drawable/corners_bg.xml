@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--基本属性（corners、gradient、padding、size、solid、stroke）-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#464444" />
+    <!--这是描边属性，可以定义描边的宽度，颜色，虚实线等-->
+    <stroke
+        android:width="0.7dp"
+        android:color="#959090"
+        />
+    <!--设置虚线-->
+    <!--android:dashWidth="2dp"
+    android:dashGap="10dp" -->
+    <!--//Corners标签是用来字义圆角的，其中radius与其它四个并不能共同使用。
+
+            Android:radius：定义四个角的的圆角半径。
+
+             其它四个是逐个字义每个角的圆角半径。-->
+
+    <!--solid用以指定内部填充色
+
+    只有一个属性：
+
+    <solid  android:color="color" />-->
+
+    <!--3、gradient
+
+gradient用以定义渐变色，可以定义两色渐变和三色渐变，及渐变样式，它的属性有下面几个：
+
+<gradient
+    android:type=["linear" | "radial" | "sweep"]    //共有3中渐变类型，线性渐变（默认）/放射渐变/扫描式渐变
+    android:angle="integer"     //渐变角度，必须为45的倍数，0为从左到右，90为从上到下
+    android:centerX="float"     //渐变中心X的相当位置，范围为0～1
+    android:centerY="float"     //渐变中心Y的相当位置，范围为0～1
+    android:startColor="color"   //渐变开始点的颜色
+    android:centerColor="color"  //渐变中间点的颜色，在开始与结束点之间
+    android:endColor="color"    //渐变结束点的颜色
+    android:gradientRadius="float"  //渐变的半径，只有当渐变类型为radial时才能使用
+    android:useLevel=["true" | "false"] />  //使用LevelListDrawable时就要设置为true。设为false时才有渐变效果
+首先有三种渐变类型，分别是：linear（线性渐变）、radial（放射性渐变）、sweep（扫描式渐变）-->
+
+
+    <corners
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"/>
+</shape>

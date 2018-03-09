@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- TITLE BAR -->
+
+    <RelativeLayout
+        android:id="@+id/id_video_view_control"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <!-- Video View -->
+
+    <RelativeLayout
+        android:id="@+id/id_video_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top" >
+
+        <!-- Video Surface View -->
+
+        <SurfaceView
+            android:id="@+id/id_video_display_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </SurfaceView>
+
+        <RelativeLayout
+            android:id="@+id/id_video_parameter_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/txtNetType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                >
+
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/txtNetRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dip"
+                android:text="可用/总空间： "
+                />
+
+            <TextView
+                android:id="@+id/txtVideoFramerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dip"
+                android:layout_toRightOf="@id/txtNetRate"
+                android:text="42.2G/48G "
+                >
+            </TextView>
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/changeZoom"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

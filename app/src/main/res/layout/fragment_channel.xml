@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/channel_title_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_normal"
+        >
+    <TextView
+        android:id="@+id/channel_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="20dp"
+        android:text = "频道"
+        android:textColor="@color/text_write"
+        />
+    </LinearLayout>
+    <GridView
+        android:id="@+id/channel_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+
+        android:numColumns="2"
+        />
+    <LinearLayout
+        android:id="@+id/tempchannel_title_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_normal"
+        >
+    <TextView
+        android:id="@+id/tempchannel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_write"
+        android:layout_gravity="center_vertical"
+        android:textSize="20dp"
+        android:text = "临时会话(长按可编辑)"
+        />
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/tempchannel_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="2"
+        />
+
+</RelativeLayout>
